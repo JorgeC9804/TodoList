@@ -1,0 +1,52 @@
+.information-box {
+    width: 230px;
+    height: 120px;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: -10px 10px 15px;
+}
+.information-box:hover {
+    position: relative;
+    bottom: 3px;
+    background-color: rgb(240, 212, 181);
+    color: black;
+    transition: all 0.5s ease-out;
+    border-radius: 10px;
+}
+.inf-box-false {
+    box-shadow: -10px 10px 15px rgb(56, 1, 1);
+}
+.inf-box-true {
+    box-shadow: -10px 10px 15px rgb(22, 44, 0);
+}
+.title {
+    height: 50%;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    
+}
+.btn-general {
+    width: 80px;
+    padding: 8px;
+    border: 0px;
+    border-radius: 4px;
+}
+.btn-red {
+    background-color: rgb(250, 100, 100);
+    box-shadow: -4px 4px 6px rgb(129, 5, 5);
+}
+.btn-red:hover {
+    border: 1px solid rgb(180, 71, 71);
+}
+.btn-green {
+    background-color: chartreuse;
+    box-shadow: -4px 4px 6px rgb(76, 138, 15);
+}
+.btn-green:hover {
+    border: 1px solid rgb(88, 201, 60);
+}
