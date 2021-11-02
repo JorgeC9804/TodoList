@@ -8,9 +8,6 @@ const MeTodoList = () => {
     const [todo, setTodo] = useState([]);
     const [choose, setChoose] = useState(true);
     const [chooseBetween, setChooseBetween] = useState(false);
-    const [btodo, setBtodo] = useState(true);
-    const [bcomplete, setBcomplete] = useState(false);
-    const [bincomplete, setBincomplete] = useState(false);
 
     const jsonplaceholder = async () => {
         const response = await fetch('https://jsonplaceholder.typicode.com/todos');
@@ -20,11 +17,11 @@ const MeTodoList = () => {
         setTodo(short);
     }
 
-    const handleDelete = id => {
+    /*const handleDelete = id => {
         setTodo(
             todo.filter( todos => todos.id !== id )
         )
-    }
+    }*/
 
     const handleStatus = ( id, completed ) => {
         setTodo(
@@ -74,7 +71,6 @@ const MeTodoList = () => {
                     <ShowCard 
                         key={todos.id} 
                         todos={todos} 
-                        handleDelete={handleDelete}
                         handleStatus={handleStatus}
                     /> )
                     
@@ -86,7 +82,6 @@ const MeTodoList = () => {
                             <ShowCard 
                                 key={todos.id} 
                                 todos={todos} 
-                                handleDelete={handleDelete}
                                 handleStatus={handleStatus}
                             />
                             ) :
@@ -99,7 +94,6 @@ const MeTodoList = () => {
                             <ShowCard 
                                 key={todos.id} 
                                 todos={todos} 
-                                handleDelete={handleDelete}
                                 handleStatus={handleStatus}
                             />
                             ) :

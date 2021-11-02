@@ -1,7 +1,7 @@
 import React from "react";
 import './ShowCard.css'
 
-const ShowCard = ({todos, handleDelete, handleStatus}) => {
+const ShowCard = ({todos, handleStatus}) => {
     
     const { id, title, completed } = todos;
 
