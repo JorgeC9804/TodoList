@@ -1,0 +1,73 @@
+.complete {
+    background-color: rgb(54, 156, 240)
+    /*rgb(53, 202, 140);*/
+}
+.incomplete {
+    background-color: rgb(236, 184, 13);
+}
+.btn-general {
+    width: 150px;
+    border: 0px;
+    padding: 4px;
+    box-shadow: 0px 4px 4px;
+}
+.header {
+    position: fixed;
+    background-color: rgb(236, 184, 13);
+    height: 110px;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+    font-size: 4vh;
+}
+.body {
+    position: relative;
+    top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px;
+    z-index: 0;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: 110px;
+    margin: 15px;
+    padding: 8px;
+    box-shadow: 0px 12px 10px;
+}
+.title {
+    height: 50%;
+}
+.btn-status {
+    height: 50%;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*=======================btn header========================*/
+.btn-header {
+    width: 100px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 0px;
+    margin: 4px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 1px 1px 1px;
+}
+
+.btn-g-col {
+    width: 100px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid;
+    margin: 4px;
+    color: chocolate;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 1px 1px 1px;
+}
